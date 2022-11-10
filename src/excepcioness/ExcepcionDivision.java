@@ -15,7 +15,7 @@ public class ExcepcionDivision {
         try {
             resultado = numero / 0;
         } catch (ArithmeticException e) {
-            System.out.println("No se puede dividir entre 0 "+"\n"+e.getMessage());
+            System.out.println("No se puede dividir entre 0 " + "\n " + e.getMessage());
         }
 
     }
