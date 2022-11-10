@@ -12,7 +12,7 @@ public class Excepcion {
         A();
     }
 
-    public static void A(String... mitocode) {
+    public static void A() {
         try {
             int n1 = Integer.parseInt(JOptionPane.showInputDialog("Digite el divisor"));
             int n2 = Integer.parseInt(JOptionPane.showInputDialog("Digite el dividendo:"));
