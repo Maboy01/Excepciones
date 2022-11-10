@@ -12,16 +12,24 @@ public class Excepcion {
         A();
     }
 
-    public static void A() {
-        double a = Double.parseDouble(JOptionPane.showInputDialog("Ingrese un numero"));
-        double b = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el denominador"));
-        double aux;
+    public static void A(String... mitocode) {
         try {
-            aux = a / b;
-            JOptionPane.showMessageDialog(null, aux);
-        } catch (ArithmeticException e) {
+            int n1 = Integer.parseInt(JOptionPane.showInputDialog("Digite el divisor"));
+            int n2 = Integer.parseInt(JOptionPane.showInputDialog("Digite el dividendo:"));
+            int aux;
+            if (n2 < 10) {
+                aux = n1 / n2;
+                JOptionPane.showMessageDialog(null, aux);
+            } else {
+                throw new Nuevaexcepcion("Solo numeros menores a 10");
+            }
+        } catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(null, "Es una cadena de texto, tiene que ser un numero");
+        } catch (ArithmeticException a) {
+            JOptionPane.showMessageDialog(null, "No se puede dividir entre 0");
+        } catch (Exception e) {
             JOptionPane.showMessageDialog(null, e.getMessage());
         }
-    }
 
+    }
 }
