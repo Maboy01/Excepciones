@@ -18,8 +18,8 @@ public class Excepcion {
             int n1 = Integer.parseInt(JOptionPane.showInputDialog("Digite el entero"));
             int n2 = Integer.parseInt(JOptionPane.showInputDialog("Digite el dividendo:"));
             int aux;
-            //Se hace un if que el dividendo no sea mayor a 10
-            if (n1 >= 10) {
+            //Se hace un if que el entero  sea mayor a 10
+            if (n1 <= 10) {
                 aux = n1 / n2;
                 JOptionPane.showMessageDialog(null, aux);
             } else {
