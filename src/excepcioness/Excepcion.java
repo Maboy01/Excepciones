@@ -24,7 +24,7 @@ public class Excepcion {
                 JOptionPane.showMessageDialog(null, aux);
             } else {
                 //En el else llamamos a nuestra nueva excepcion que creamos en la otra clase
-                throw new Nuevaexcepcion("Solo numeros menores a 10");
+                throw new Nuevaexcepcion("Solo numeros mayores a 10");
             }
         } catch (NumberFormatException ex) {
             //Un Excepcion para que avise al usuario que no puede meter texto
