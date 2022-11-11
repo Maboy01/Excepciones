@@ -15,7 +15,7 @@ public class Excepcion {
     public static void A() {
         try {
             //Se definen el divisor, dividendo y un aux para la division
-            int n1 = Integer.parseInt(JOptionPane.showInputDialog("Digite el ene"));
+            int n1 = Integer.parseInt(JOptionPane.showInputDialog("Digite el entero"));
             int n2 = Integer.parseInt(JOptionPane.showInputDialog("Digite el dividendo:"));
             int aux;
             //Se hace un if que el dividendo no sea mayor a 10
